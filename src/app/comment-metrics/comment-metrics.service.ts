@@ -1,7 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
-import { QuantityVocabulariesPracticedDto } from '../dto/quantity-vocabularies-practiced.model';
+import { CommentMetric } from '../dto/comment-metric.model';
 
 @Injectable({
   providedIn: 'root'
@@ -14,7 +14,7 @@ export class PracticeMetricsService {
     private http: HttpClient
   ) { }
 
-  public getVocabulariesQuantityPracticedByDay(): Observable<QuantityVocabulariesPracticedDto[]> {
-    return this.http.get<QuantityVocabulariesPracticedDto[]>(this.url+"/vocabulary-metrics/day")
+  public getCommentMetrics(): Observable<CommentMetric[]> {
+    return this.http.get<CommentMetric[]>(this.url+"/metrics/comments")
   }
 }
