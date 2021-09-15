@@ -8,12 +8,14 @@ import {HttpClientModule} from "@angular/common/http";
 import { ChartsModule } from 'ng2-charts';
 import { DatePipe } from '@angular/common';
 import { VocabularyMetricsComponent } from './metrics/vocabulary-metrics/vocabulary-metrics.component';
+import { HeaderComponent } from './header/header.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     PracticeMetricsComponent,
-    VocabularyMetricsComponent
+    VocabularyMetricsComponent,
+    HeaderComponent
   ],
   imports: [
     BrowserModule,
