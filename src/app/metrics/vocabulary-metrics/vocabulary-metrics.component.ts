@@ -18,7 +18,7 @@ export class VocabularyMetricsComponent implements OnInit {
 
 
   public chartOptions: ChartOptions = {
-    responsive: false,
+    responsive: true,
     scales: {
       yAxes: [{
         ticks: {

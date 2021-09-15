@@ -15,6 +15,6 @@ export class PracticeMetricsService {
   ) { }
 
   public getCommentMetrics(): Observable<CommentMetric[]> {
-    return this.http.get<CommentMetric[]>(this.url+"/metrics/comments")
+    return this.http.get<CommentMetric[]>(this.url+"/metrics/comments/week")
   }
 }

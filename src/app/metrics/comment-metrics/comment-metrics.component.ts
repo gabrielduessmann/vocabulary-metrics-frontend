@@ -19,7 +19,7 @@ export class PracticeMetricsComponent implements OnInit {
 
 
   public chartOptions: ChartOptions = {
-    responsive: false,
+    responsive: true,
     scales: {
       yAxes: [{
         ticks: {
