@@ -16,6 +16,6 @@ export class VocabularyMetricsService {
 
 
   public getVocabularyMetrics(): Observable<VocabularyMetric[]> {
-    return this.http.get<VocabularyMetric[]>(`${this.url}/metrics/vocabularies`)
+    return this.http.get<VocabularyMetric[]>(`${this.url}/metrics/vocabularies/week`)
   }
 }
